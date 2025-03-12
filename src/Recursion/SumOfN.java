@@ -1,0 +1,14 @@
+package Recursion;
+import java.util.*;
+public class SumOfN {
+    public static void main(String args[]){
+        Scanner x=new Scanner(System.in);
+        int n=x.nextInt();
+        System.out.println(sum(n));
+    }
+    public static int sum(int n){
+        if(n==1)
+            return 1;
+        return n+sum(n-1);
+    }
+}
